@@ -1,0 +1,26 @@
+{
+  "name": "sales-agent",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "turbo run start:dev",
+    "postinstall": "prisma skills sync || exit 0"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.15.0",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.15.0",
+  "devDependencies": {
+    "turbo": "^2.11.10",
+    "prisma": "8.0.0-rc.27"
+  }
+}
