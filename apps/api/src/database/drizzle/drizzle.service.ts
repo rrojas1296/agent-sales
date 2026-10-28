@@ -3,7 +3,7 @@ import { ConfigService } from "@nestjs/config";
 import { drizzle } from "drizzle-orm/node-postgres";
 import { EnvironmentSchema } from "../../config/validationSchema";
 import { Pool } from "pg";
-import { relations } from "./schemas/relations.js";
+import { relations } from "./relations.js";
 
 @Injectable()
 export class DrizzleService implements OnModuleDestroy {
