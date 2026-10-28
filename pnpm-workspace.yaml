@@ -2,5 +2,6 @@ packages:
   - "apps/*"
   - "packages/*"
 allowBuilds:
+  argon2: false
+  bcrypt: false
   esbuild: false
-  workerd: false

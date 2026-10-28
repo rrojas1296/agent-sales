@@ -9,7 +9,10 @@
   "main": "index.js",
   "scripts": {
     "start:dev": "turbo run start:dev",
-    "postinstall": "prisma skills sync || exit 0"
+    "db:docker:dev": "docker compose -f compose.dev.yaml up"
+  },
+  "devDependencies": {
+    "turbo": "^2.11.10"
   },
   "devEngines": {
     "packageManager": {
@@ -18,9 +21,5 @@
       "onFail": "download"
     }
   },
-  "packageManager": "pnpm@12.15.0",
-  "devDependencies": {
-    "turbo": "^2.11.10",
-    "prisma": "8.0.0-rc.27"
-  }
+  "packageManager": "pnpm@12.15.0"
 }
